@@ -1,0 +1,22 @@
+{
+  "name": "d20",
+  "version": "0.1.0",
+  "description": "Rolls a d20 before every user message and injects the result into LLM context. The grind never stops. \ud83c\udfb2",
+  "author": "Jawz",
+  "extension": {
+    "protocol_version": 1,
+    "runtime": "process",
+    "command": "python3",
+    "args": [
+      "main.py"
+    ],
+    "permissions": [
+      "privacy.llm_content"
+    ],
+    "hooks": [
+      {
+        "hook": "before_message"
+      }
+    ]
+  }
+}
